@@ -49,7 +49,7 @@ jobs:
         mkdir archive
         cp LICENSE README.md archive/
         cd archive
-        ls “../target/${{ matrix.target }}/release/"
+        ls "../target/${{ matrix.target }}/release/"
         if [ "${{ matrix.build }}" = "windows" ]; then
           cp "../target/${{ matrix.target }}/release/typora_inject.exe" ./
           7z a "${{ matrix.archive-name }}" LICENSE README.md typora_inject.exe

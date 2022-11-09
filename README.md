@@ -30,4 +30,4 @@ SUPPORT GENUINE SOFTWARE AND DO NOT SELL PIRATED SOFTWARE !!!
 - [x] hook `console.log` to remote http server and block override
 - [x] hook `electron-fetch` for sniffing request
 - [ ] Full version compatibility (Not tested for older version and may fail in the future)
-
+- [ ] Multi os compatibility (only test on windows,Drawin have another packaging methods)

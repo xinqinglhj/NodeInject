@@ -14,7 +14,7 @@ usage:
 1. modify `hook.js` if you need
 2. use `cargo build` to make  executable
 3. Move the program to the Typora directory
-4. run
+4. run (in shell,windows will close window when program exit,you need to get generated fake license in program output)
 
 ### About `hook.js`
 

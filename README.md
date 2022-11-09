@@ -1,4 +1,4 @@
-# TpyoraInject
+# NodeInject
 a inject tools for injecting js code into typora (with a an activating script example)
 
 ### How it works:

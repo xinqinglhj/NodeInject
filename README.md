@@ -1,5 +1,5 @@
 # NodeInject
-a inject tools for injecting js code into typora (with a an activating script example)
+a inject tools for injecting js code into typora (with an activating script example)
 
 ### How it works:
 

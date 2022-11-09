@@ -1,2 +1,25 @@
 # TpyoraInject
-a inject tools for injecting js code into typora (with a an activation script example)
+a inject tools for injecting js code into typora (with a an activating script example)
+
+### How it works:
+
+1. unpack `node_modules.asar` package (in `Typora\resources`)
+2. write `hook.js`  into `raven` package directory (raven will be required at the early stage of startup)
+3. modify `index.js` of `raven`,injecting require of `hook.js`
+
+> Currently using embedded javascript file (`hook.js`)
+
+usage:
+
+1. modify `hook.js` if you need
+2. use `cargo build` to make  executable
+3. Move the program to the Typora directory
+4. run
+
+### About `hook.js`
+
+#### Ability
+
+- [x] make typora to activate with the generated activation code (Test passed in version 1.4.8)
+- [x] hook `console.log` to remote http server and block override
+

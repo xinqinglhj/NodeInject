@@ -1,0 +1,10 @@
+[package]
+name = "tpyora_inject"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rasar = {git = 'https://github.com/Zerthox/rasar.git'}
+random-string = "1.0.0"

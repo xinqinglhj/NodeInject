@@ -18,8 +18,14 @@ usage:
 
 ### About `hook.js`
 
+#### WARNING
+
+JUST FOR LEARNING! SUPPORT GENUINE SOFTWARE AND DO NOT SELL PIRATED SOFTWARE !!!
+
 #### Ability
 
 - [x] make typora to activate with the generated activation code (Test passed in version 1.4.8)
 - [x] hook `console.log` to remote http server and block override
+- [x] hook `electron-fetch` for sniffing request
+- [ ] Full version compatibility (Not tested for older version and may fail in the future)
 

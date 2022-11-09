@@ -49,13 +49,11 @@ jobs:
         mkdir archive
         cp LICENSE README.md archive/
         cd archive
-        ls "../target/${{ matrix.target }}/release/"
+        pwd
         if [ "${{ matrix.build }}" = "windows" ]; then
-          cp "../target/${{ matrix.target }}/release/typora_inject.exe" ./
-          7z a "${{ matrix.archive-name }}" LICENSE README.md typora_inject.exe
+          7z a "${{ matrix.archive-name }}" LICENSE README.md "../target/${{ matrix.target }}/release/typora_inject.exe"
         else
-          cp "../target/${{ matrix.target }}/release/typora_inject" ./
-          tar -czf "${{ matrix.archive-name }}" LICENSE README.md typora_inject
+          tar -czf "${{ matrix.archive-name }}" LICENSE README.md "../target/${{ matrix.target }}/release/typora_inject"
         fi
     - name: Upload archive
       uses: actions/upload-artifact@v1

@@ -48,13 +48,13 @@ jobs:
       run: |
         mkdir archive
         cp LICENSE README.md archive/
-        ls -la
+        ls -lR
         if [ "${{ matrix.build }}" = "windows" ]; then
-          cp "../target/${{ matrix.target }}/release/typora_inject.exe" ./archive/
+          cp "./target/${{ matrix.target }}/release/typora_inject.exe" ./archive/
           cd archive
           7z a "${{ matrix.archive-name }}" LICENSE README.md typora_inject.exe
         else
-          cp "../target/${{ matrix.target }}/release/typora_inject" ./archive/
+          cp "./target/${{ matrix.target }}/release/typora_inject" ./archive/
           cd archive
           tar -czf "${{ matrix.archive-name }}" LICENSE README.md typora_inject
         fi
